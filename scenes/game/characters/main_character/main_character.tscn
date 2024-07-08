@@ -1,0 +1,468 @@
+[gd_scene load_steps=75 format=3 uid="uid://ca3ueo0yewjov"]
+
+[ext_resource type="Texture2D" uid="uid://d2ww55g3amd7y" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/captain_clown_nose/captain_clown_nose_with_sword/15_attack_1/attack_1_01.png" id="2_082ap"]
+[ext_resource type="Texture2D" uid="uid://b2dgduhc54fge" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/captain_clown_nose/captain_clown_nose_with_sword/15_attack_1/attack_1_02.png" id="3_ejl7h"]
+[ext_resource type="Script" path="res://scenes/game/characters/main_character/MainCharacterBomb.gd" id="3_odvu6"]
+[ext_resource type="Texture2D" uid="uid://crc08jcktlmie" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/captain_clown_nose/captain_clown_nose_with_sword/15_attack_1/attack_1_03.png" id="4_251hd"]
+[ext_resource type="Texture2D" uid="uid://bbmvndw14e4ur" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/captain_clown_nose/captain_clown_nose_with_sword/18_air_attack_1/air_attack_1_01.png" id="5_mivj5"]
+[ext_resource type="Texture2D" uid="uid://bl37gl4exh6eg" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/captain_clown_nose/captain_clown_nose_with_sword/18_air_attack_1/air_attack_1_02.png" id="6_18qxs"]
+[ext_resource type="Script" path="res://scenes/game/characters/main_character/main_character_movement.gd" id="7_fm4k8"]
+[ext_resource type="Texture2D" uid="uid://b0oa812xtkdaa" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/captain_clown_nose/captain_clown_nose_with_sword/18_air_attack_1/air_attack_1_03.png" id="7_juv42"]
+[ext_resource type="Texture2D" uid="uid://b68ix57bp8jop" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-attack1-00.png" id="7_m0vw6"]
+[ext_resource type="Texture2D" uid="uid://c3xm3b8y1l6a2" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/captain_clown_nose/captain_clown_nose_with_sword/17_attack_3/attack_3_01.png" id="8_0kmi8"]
+[ext_resource type="Texture2D" uid="uid://cbay631wofwv2" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-attack1-01.png" id="8_beonu"]
+[ext_resource type="Texture2D" uid="uid://dvvk610f15r5q" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-attack1-02.png" id="9_b2eyo"]
+[ext_resource type="Texture2D" uid="uid://bnxuujungjm2b" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/captain_clown_nose/captain_clown_nose_with_sword/17_attack_3/attack_3_02.png" id="9_muuna"]
+[ext_resource type="Texture2D" uid="uid://bynve7c235n7n" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/captain_clown_nose/sword_effects/25-attack_2/attack_2_01.png" id="10_1aidl"]
+[ext_resource type="Texture2D" uid="uid://tdh4qlh5np4" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-attack1-03.png" id="10_3xmv2"]
+[ext_resource type="Texture2D" uid="uid://c5tojd43li4a8" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/captain_clown_nose/captain_clown_nose_with_sword/17_attack_3/attack_3_03.png" id="10_efncg"]
+[ext_resource type="Texture2D" uid="uid://njv80q6u0sp8" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/captain_clown_nose/sword_effects/25-attack_2/attack_2_02.png" id="11_qm4vv"]
+[ext_resource type="Texture2D" uid="uid://dsq7sdewqd6ta" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-attack1-04.png" id="11_rmega"]
+[ext_resource type="Texture2D" uid="uid://dj50x7x8picbm" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-attack3-05.png" id="12_dahlq"]
+[ext_resource type="Texture2D" uid="uid://bfaeqmjk304kj" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/captain_clown_nose/sword_effects/25-attack_2/attack_2_03.png" id="12_wjmjd"]
+[ext_resource type="Texture2D" uid="uid://gfesv2lcqf4g" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-die-00.png" id="16_ht7po"]
+[ext_resource type="Texture2D" uid="uid://byce8sxyqxpup" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-die-01.png" id="17_j6bk7"]
+[ext_resource type="Texture2D" uid="uid://bibvmb7s1lriv" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-die-02.png" id="18_vyqrn"]
+[ext_resource type="Texture2D" uid="uid://73rch1i1ubdf" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-die-03.png" id="19_65onx"]
+[ext_resource type="Texture2D" uid="uid://l5x4nsepml6o" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-die-04.png" id="20_wnmo5"]
+[ext_resource type="Texture2D" uid="uid://bisuowpoy416t" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-die-05.png" id="21_wlgcy"]
+[ext_resource type="Texture2D" uid="uid://dideckl0yc2ye" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-die-06.png" id="22_fqu52"]
+[ext_resource type="Texture2D" uid="uid://bb7u1pp1b0wt1" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-idle-00.png" id="26_atwjh"]
+[ext_resource type="Texture2D" uid="uid://edatqtvdrs8o" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-idle-01.png" id="27_8jwg1"]
+[ext_resource type="Texture2D" uid="uid://cpom8yg6b05ms" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-fall-00.png" id="28_r4ort"]
+[ext_resource type="Texture2D" uid="uid://c60pdbsllc6q" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-fall-01.png" id="29_0bvxh"]
+[ext_resource type="Texture2D" uid="uid://chj0qmbg5s5bl" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-crouch-00.png" id="30_ncn87"]
+[ext_resource type="Texture2D" uid="uid://c4nyyhw7lkaoi" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-crouch-01.png" id="31_ilt5f"]
+[ext_resource type="Texture2D" uid="uid://g0h71t2xewrh" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-hurt-00.png" id="32_5r6we"]
+[ext_resource type="Texture2D" uid="uid://bdvqf82lpmsqv" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-crouch-02.png" id="32_stiqf"]
+[ext_resource type="Texture2D" uid="uid://bjse7ixu0l12p" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-crouch-03.png" id="33_n2bsw"]
+[ext_resource type="Texture2D" uid="uid://ct51xtcte1o17" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-hurt-01.png" id="33_w4amt"]
+[ext_resource type="Texture2D" uid="uid://dfebidhexu0va" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-hurt-02.png" id="34_yebbx"]
+[ext_resource type="Texture2D" uid="uid://dp06bwp5hfi06" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-idle-2-00.png" id="35_qvxko"]
+[ext_resource type="Texture2D" uid="uid://bpqook71ftlos" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-idle-2-01.png" id="36_5iu2n"]
+[ext_resource type="Texture2D" uid="uid://dfrvtoma62je" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-idle-2-02.png" id="37_t3oy0"]
+[ext_resource type="Texture2D" uid="uid://cyxpkiwyplwt0" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-idle-2-03.png" id="38_qpk0c"]
+[ext_resource type="Texture2D" uid="uid://cvk1g5a0gvrq6" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-jump-00.png" id="39_8fccg"]
+[ext_resource type="Texture2D" uid="uid://bocvq7t7e1w8l" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-jump-01.png" id="40_q85qn"]
+[ext_resource type="Texture2D" uid="uid://d2qr25vudml3k" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/dust_particles/fall_01.png" id="41_6a4mw"]
+[ext_resource type="Texture2D" uid="uid://0emictedgunh" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-jump-02.png" id="41_hhoyj"]
+[ext_resource type="Texture2D" uid="uid://doev5bmf2dswe" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-jump-03.png" id="42_3usja"]
+[ext_resource type="Texture2D" uid="uid://c2k2coby1fpvc" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/dust_particles/fall_02.png" id="42_yjra8"]
+[ext_resource type="Texture2D" uid="uid://db76g1ao0n2dh" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/dust_particles/fall_03.png" id="43_g1ou6"]
+[ext_resource type="Texture2D" uid="uid://dv63bwljombwt" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-run-00.png" id="43_tejth"]
+[ext_resource type="Texture2D" uid="uid://cugghkt4gjwcd" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/dust_particles/fall_04.png" id="44_57rgi"]
+[ext_resource type="Texture2D" uid="uid://dg2vvvlr0rwq6" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-run-01.png" id="44_uomjk"]
+[ext_resource type="Texture2D" uid="uid://vg7wevqpers0" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-run-02.png" id="45_3kcii"]
+[ext_resource type="Texture2D" uid="uid://bs3p0bj6qxm4i" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/dust_particles/fall_05.png" id="45_hsjcg"]
+[ext_resource type="Texture2D" uid="uid://cuiu2p6vm085k" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-run-03.png" id="46_j3vh2"]
+[ext_resource type="Texture2D" uid="uid://2uml15hs03bi" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/dust_particles/jump_01.png" id="46_y7bdw"]
+[ext_resource type="Texture2D" uid="uid://c1ljnly5b7sa8" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/dust_particles/jump_02.png" id="47_6eutl"]
+[ext_resource type="Texture2D" uid="uid://yf6u6sl0r4qn" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-run-04.png" id="47_w6etg"]
+[ext_resource type="Texture2D" uid="uid://ybsgysst8uag" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/dust_particles/jump_03.png" id="48_baqmo"]
+[ext_resource type="Texture2D" uid="uid://crxa6e5kdmnia" path="res://assets/sprites/Adventurer-1.5/Individual Sprites/adventurer-run-05.png" id="48_m16gn"]
+[ext_resource type="Texture2D" uid="uid://denrfauwldu7f" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/dust_particles/jump_04.png" id="49_yr71v"]
+[ext_resource type="Texture2D" uid="uid://dhnytq56b6tdy" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/dust_particles/jump_05.png" id="50_d6mr3"]
+[ext_resource type="Texture2D" uid="uid://d2du0tv25x4rt" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/dust_particles/jump_06.png" id="51_fkqab"]
+[ext_resource type="Texture2D" uid="uid://drholiht80osg" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/dust_particles/run_01.png" id="52_1cdbj"]
+[ext_resource type="Texture2D" uid="uid://c821ug4eciq1t" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/dust_particles/run_02.png" id="53_qs17i"]
+[ext_resource type="Texture2D" uid="uid://coqy75om2qkct" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/dust_particles/run_03.png" id="54_wye7t"]
+[ext_resource type="Texture2D" uid="uid://biu0cnh3m830s" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/dust_particles/run_04.png" id="55_qndtn"]
+[ext_resource type="Texture2D" uid="uid://msdtsaehyx3e" path="res://assets/sprites/treasure_hunters/captain_clown_nose/sprites/dust_particles/run_05.png" id="56_e847i"]
+[ext_resource type="Script" path="res://scenes/game/characters/main_character/main_character_collision.gd" id="57_7h47x"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sohxe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_082ap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ejl7h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_251hd")
+}],
+"loop": false,
+"name": &"attack_1",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_m0vw6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_beonu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_m0vw6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_b2eyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3xmv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_rmega")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_dahlq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_m0vw6")
+}],
+"loop": false,
+"name": &"attack_2",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_0kmi8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_muuna")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_efncg")
+}],
+"loop": false,
+"name": &"attack_3",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_mivj5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_18qxs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_juv42")
+}],
+"loop": false,
+"name": &"attack_air_1",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_ht7po")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_j6bk7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_vyqrn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_65onx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_wnmo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_wlgcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_fqu52")
+}],
+"loop": false,
+"name": &"dead_ground",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_ht7po")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_j6bk7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_vyqrn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_65onx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_wnmo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_wlgcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_fqu52")
+}],
+"loop": false,
+"name": &"dead_hit",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_atwjh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_8jwg1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_r4ort")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_0bvxh")
+}],
+"loop": true,
+"name": &"fall_with_sword",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_ncn87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_ilt5f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_stiqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_n2bsw")
+}],
+"loop": true,
+"name": &"ground_with_sword",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("32_5r6we")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_w4amt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_yebbx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_5r6we")
+}],
+"loop": false,
+"name": &"hit_with_sword",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("35_qvxko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_5iu2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_t3oy0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_qpk0c")
+}],
+"loop": true,
+"name": &"idle_with_sword",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_8fccg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_q85qn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_hhoyj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_3usja")
+}],
+"loop": true,
+"name": &"jump_with_sword",
+"speed": 8.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"miku",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("43_tejth")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_uomjk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_3kcii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_j3vh2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_w6etg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_m16gn")
+}],
+"loop": true,
+"name": &"run_with_sword",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q04ya"]
+size = Vector2(24, 28.5)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cwldb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("41_6a4mw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_yjra8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_g1ou6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_57rgi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_hsjcg")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("46_y7bdw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_6eutl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_baqmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_yr71v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_d6mr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_fkqab")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("52_1cdbj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_qs17i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_wye7t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_qndtn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_e847i")
+}],
+"loop": true,
+"name": &"run",
+"speed": 8.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_isfec"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_1aidl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_qm4vv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_wjmjd")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"attack_2_effect",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_841yf"]
+size = Vector2(57.5, 22.5)
+
+[node name="MainCharacter" type="CharacterBody2D" groups=["player"]]
+disable_mode = 1
+
+[node name="MainCharacterMovement" type="Node2D" parent="." node_paths=PackedStringArray("character", "main_animation", "effect_animation_sword", "audio_player")]
+script = ExtResource("7_fm4k8")
+character = NodePath("..")
+main_animation = NodePath("../Animation")
+effect_animation_sword = NodePath("../EffectsSword")
+audio_player = NodePath("../AudioStreamPlayer2D")
+
+[node name="MainCharacterCollision" type="Node2D" parent="." node_paths=PackedStringArray("character")]
+script = ExtResource("57_7h47x")
+character = NodePath("..")
+
+[node name="MainCharacterBomb" type="Node2D" parent="."]
+script = ExtResource("3_odvu6")
+
+[node name="Animation" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1.0545, -14.3523)
+scale = Vector2(0.653698, 0.832386)
+sprite_frames = SubResource("SpriteFrames_sohxe")
+animation = &"idle_with_sword"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -11)
+shape = SubResource("RectangleShape2D_q04ya")
+
+[node name="Effects" type="AnimatedSprite2D" parent="."]
+visible = false
+modulate = Color(0.137255, 0.423529, 0, 1)
+sprite_frames = SubResource("SpriteFrames_cwldb")
+animation = &"jump"
+
+[node name="EffectsSword" type="AnimatedSprite2D" parent="."]
+z_index = 2
+position = Vector2(32, -1)
+sprite_frames = SubResource("SpriteFrames_isfec")
+animation = &"idle"
+
+[node name="AreaSword" type="Area2D" parent="." groups=["hit"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaSword"]
+position = Vector2(38.25, -10.75)
+shape = SubResource("RectangleShape2D_841yf")
+disabled = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+bus = &"Effects"
+
+[connection signal="animation_finished" from="Animation" to="MainCharacterMovement" method="_on_animation_animation_finished"]
+[connection signal="frame_changed" from="Animation" to="MainCharacterMovement" method="_on_animation_frame_changed"]
+[connection signal="finished" from="AudioStreamPlayer2D" to="MainCharacterMovement" method="_on_audio_stream_player_2d_finished"]
